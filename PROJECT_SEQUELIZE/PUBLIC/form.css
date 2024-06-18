@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+label{
+    font-size: 20px;
+}
+form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div{
+    margin-bottom: 25px;
+}
+input{
+    width: 300px;
+    height: 57px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #edf2f8;
+    padding: 15px;
+    font-size: 15px;
+}
+input::placeholder{
+    font-size: 15px;
+    
+}
+h1{
+    position: relative;
+    top: -10px;
+}
+button{
+    padding:15px 35px;
+    border-radius: 6px;
+    border:none;
+    color: white;
+    background: #49a5f0;
+}
+/* estilizacao add a tela cadastro*/
+
+.popUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0px;
+    width:100%;
+    padding: 11px;
+    background: rgba(246, 78, 78, 0.645);
+    border-radius: 6px 6px 0px 0px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+ .popOp{
+    z-index: 99;
+    padding: 15px;
+    width: 100%;
+    background: rgba(86, 230, 86, 0.642);
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+ }
+ .btnpop{
+    font-weight: 700;
+ }
+ 
+ .popOp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding:25px;
+    width: 100%;
+    top:0px;
+    background: rgba(246, 78, 78, 0.645); 
+}

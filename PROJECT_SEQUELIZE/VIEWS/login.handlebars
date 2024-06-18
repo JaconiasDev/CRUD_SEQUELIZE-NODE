@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+   {{#if pop }}
+    <div class="popUpLogin">
+       <p>
+         dados incorretos verifique seu email ou senha
+       </p>
+    </div>
+   {{/if}}
+
+   <form class="formLogin" action="/tasks/loginTeste" method="post">
+   <h1>login</h1>
+   <main>
+    <div class="div">
+        <input  class="inputT" name="nome" type="text" placeholder="apelido">
+    </div>
+
+    <div class="div">
+        <input  class="inputT" name="email" type="email" placeholder="email">
+    </div>
+     <div class="div">
+        <input class="inputT" name="senha" type="password" placeholder="senha">
+    </div>
+     <div class="divchek">
+        <div class="divchek2">
+           <label>relembre-me</label>
+           <input type="checkbox">
+        </div>
+        <p><a href="#">esqueci a senha</a></p>
+    </div>
+     <div class="div">
+       <button type="submit">login</button>
+    </div>
+  </main>
+   </form> 
+</body>
+</html>

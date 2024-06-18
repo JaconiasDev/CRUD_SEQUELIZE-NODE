@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+h1{
+    position: relative;
+    top: -17px;
+    font-size: 45px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 30px;
+    padding-top: 45px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div{
+    margin-bottom: 35px;
+}
+
+.divchek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 100px;
+    position: relative;
+    top: -28px;
+    width: 310px;
+}
+.divchek2{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+a{
+    text-decoration: none;
+}
+.inputT{
+    width: 310px;
+    height: 55px;
+    padding: 10px;
+    font-size: 17px;
+    background: #edf2f8;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+}
+button{
+    padding: 15px 45px;
+    border-radius: 6px;
+    background:#49a5f0; 
+    border: none;
+    color:white;
+    font-size: 16px;
+}
+.popUpLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding:25px;
+    width: 100%;
+    top:0px;
+    background: rgba(246, 78, 78, 0.645);
+}
+
+
+
+
+
+
+
+
+
+
+

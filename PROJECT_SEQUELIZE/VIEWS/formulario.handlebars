@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+
+
+     
+    {{#if pop4 }}
+     <div class="popOp2">
+        <p>
+           senhas nao coinsidem! tente colocalas iguais
+        </p>
+     </div>
+   {{/if}}
+
+
+  {{#if popUp2 }}
+     <div class="popOp">
+        <p>
+           dados criados com sucesso <br>
+           agora precione "login" para voltar a tela de login<br>
+           coloque suas informacoes e seja bem vindo ao site
+        </p>
+        <button class="btnpop"><a href="/tasks/login">login</a></button>
+     </div>
+   {{/if}}
+  
+   <form action="/tasks/dados" method="post">
+   {{#if popUp }}
+     <div class="popUp">
+        <p>
+            email existente na base , tente outro email
+        </p>
+     </div>
+   {{/if}}
+
+    <h1>formulario</h1>
+    <main class="divsInputs">
+      <div>
+          <label>email</label><br>
+          <input type="email" name="email" placeholder="adicione seu email">
+      </div>
+
+      <div>
+          <label>senha</label><br>
+          <input type="password" name="senha" placeholder="crie uma senha">
+      </div>
+        <div> 
+          <label>nome</label><br>
+          <input type="text" name="nome" placeholder="digite seu nome">
+      </div>
+      <div>
+          <label>data de nascimento</label><br>
+          <input type="date" name="nascimento" placeholder="00/00/0000">
+      </div>
+
+      <div> 
+          <label>confirme senha</label><br>
+          <input type="password" name="senha2" placeholder="confirme a senha">
+      </div>
+      <div>
+        <button class="btn" type="submit">cadastrar</button>
+      </div>
+    </main>
+   </form>
+
+   <script>
+    document.querySelector('.btn').addeventlistener('click',(evt)=>{
+        evt.preventdefault();
+    })
+   </script>
+</body>
+</html>
+
+
+
+
+
